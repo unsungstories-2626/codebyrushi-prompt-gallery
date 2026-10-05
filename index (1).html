@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Simple AI influencer prompts by CodeByRushi. Read the instructions, copy a prompt, and create your image.">
+  <title>AI Influencer Prompts | CodeByRushi</title>
+  <style>
+:root{color-scheme:dark;font-family:Arial,Helvetica,sans-serif;background:#080c12;color:#f2f5fa;--muted:#bcc6d5;--border:#354153;--blue:#80b8ff;--panel:#141c28}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#080c12;color:#f2f5fa;font-size:17px;line-height:1.7}a{color:var(--blue)}button,input,select{font:inherit}button{cursor:pointer}button:disabled{cursor:default}button,a,input,select{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:3px solid #fbd47c;outline-offset:4px}[hidden]{display:none!important}::selection{background:#345d92;color:#fff}.header{max-width:920px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:24px 24px 19px;border-bottom:1px solid var(--border);gap:16px}.brand{font-size:20px;font-weight:700;color:#fff;text-decoration:none}.video-link{font-size:15px;text-underline-offset:4px}main{max-width:920px;margin:auto;padding:0 24px}.intro{padding:28px 0 23px}.intro h1{font-size:34px;line-height:1.25;letter-spacing:-.7px;margin:0 0 9px}.intro p{color:var(--muted);margin:0;font-size:17px}.section-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 28px}.section-button{border:2px solid #52617a;background:#1a2230;border-radius:9px;padding:14px 16px;color:#f1f5fc;font-size:19px;font-weight:700;line-height:1.5;text-align:center;min-height:88px}.section-button span{display:block;font-size:14px;font-weight:400;color:#c8d2e1}.section-button:hover{border-color:#96bce8}.section-button.selected{background:#193557;border-color:#80b8ff;color:#ffffff;box-shadow:inset 0 -3px 0 #80b8ff}.section-button.selected span{color:#c9e0ff}.section-heading h2{margin:0 0 5px;font-size:26px;line-height:1.4}.section-heading p{margin:0;color:var(--muted);font-size:16px}.instruction{border-left:4px solid var(--blue);background:#18283c;padding:14px 18px;margin:20px 0;color:#dbe9fb;font-size:16px;border-radius:0 6px 6px 0}.instruction strong{color:white}.results{font-size:14px;color:var(--muted);margin:18px 0 12px}.prompt-card{border:1px solid var(--border);border-radius:10px;background:var(--panel);margin:0 0 26px;overflow:hidden}.card-head{padding:24px 24px 0}.step{display:inline-block;color:#a9ceff;font-size:13px;font-weight:700;letter-spacing:.8px;margin-bottom:7px}.prompt-card h3{font-size:23px;line-height:1.4;margin:0 0 8px;letter-spacing:-.3px}.purpose{font-size:16px;color:var(--muted);margin:0 0 17px}.reference{border:1px solid #3d5572;background:#202e40;border-radius:6px;padding:12px 14px;font-size:16px;line-height:1.65}.reference strong{color:#b7d8ff;display:block;margin-bottom:3px}.tip{font-size:15px;color:var(--muted);margin:13px 0 19px}.prompt-text{margin:20px 24px 0;padding:19px 20px;background:#0e141d;border:1px solid #303d50;border-radius:6px;font-family:inherit;font-size:16px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal}.example{margin:18px 24px 0;padding:14px 17px;border-left:3px solid #7e90aa;color:#cbd5e3;font-size:15px}.example strong{display:block;margin-bottom:5px;color:#f0f4f9}.example p{margin:0}.card-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:20px 24px}.copy-button{border:1px solid var(--blue);background:#204c80;color:#ffffff;border-radius:7px;min-height:47px;padding:10px 23px;font-size:16px;font-weight:700;flex-shrink:0}.copy-button:hover{background:#2b609b;border-color:#acd0ff}.copy-button.copied{background:#174934;border-color:#7bd9a6;color:#d6ffe8}.timestamp{font-size:14px;text-underline-offset:4px}.copy-note{font-size:13px;color:var(--muted);line-height:1.6;max-width:370px}.filters{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;margin-top:22px}.filters label{display:block;font-size:15px;font-weight:700}.filters input,.filters select{display:block;width:100%;border:1px solid #5a6b84;background:#161e2b;color:#f5f7fb;border-radius:7px;padding:12px 14px;min-height:49px;font-size:16px;margin-top:7px}.filters input::placeholder{color:#a9b5c9}.scene-lines{padding:0 24px;margin:18px 0 0}.scene-lines div{margin-bottom:17px}.scene-lines dt{font-size:14px;color:#a9ceff;font-weight:700;margin-bottom:4px}.scene-lines dd{margin:0;font-size:17px;line-height:1.75;color:#e5ebf4}.scene-card .card-bottom{border-top:1px solid var(--border);margin-top:22px}.manual-copy{padding:0 24px 20px}.manual-copy p{font-size:15px;color:#fbd47c}.manual-text{padding:16px;border:1px solid #fbd47c;border-radius:6px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:16px;line-height:1.8;background:#0e141d}.empty{padding:35px 20px;border:1px dashed #66758a;border-radius:8px;text-align:center}.empty h3{margin:0;font-size:22px}.empty p{color:var(--muted)}.secondary-button{background:#263448;color:white;border:1px solid #627795;border-radius:7px;padding:10px 18px;min-height:46px}footer{font-size:14px;color:#a9b5c9;text-align:center;margin:34px 0 25px;border-top:1px solid var(--border);padding-top:22px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);padding:13px 23px;background:#173c2b;color:#e1ffec;border:1px solid #93d9b2;border-radius:8px;font-size:15px;line-height:1.5;box-shadow:0 4px 24px #0005;z-index:10;max-width:calc(100% - 32px);width:max-content;display:none}.toast.visible{display:block}.skip-link{position:fixed;top:-100px;left:15px;z-index:20;background:#204c80;color:#fff;padding:10px}.skip-link:focus{top:10px}
+@media(max-width:600px){body{font-size:16px}.header{padding:18px 16px}.brand{font-size:18px}.video-link{font-size:13px}main{padding:0 16px}.intro{padding:25px 0 20px}.intro h1{font-size:29px}.intro p{font-size:16px}.section-buttons{gap:9px;margin-bottom:25px}.section-button{padding:12px 6px;font-size:16px;min-height:82px}.section-button span{font-size:12px}.section-heading h2{font-size:24px}.instruction{padding:12px 14px;font-size:15px}.card-head{padding:19px 17px 0}.prompt-card h3{font-size:21px}.purpose{font-size:16px}.reference{font-size:15px;padding:11px 12px}.tip{font-size:15px}.prompt-text{margin:17px 12px 0;padding:15px 13px;font-size:16px;line-height:1.8}.card-bottom{padding:17px;flex-wrap:wrap}.copy-button{width:100%;min-height:49px}.timestamp{font-size:14px}.example{margin:16px 17px 0}.filters{grid-template-columns:1fr;gap:13px}.scene-lines{padding:0 17px}.scene-lines dd{font-size:16px}.copy-note{font-size:14px}.manual-copy{padding:0 17px 20px}footer{font-size:13px}.toast{font-size:14px}}
+
+select option{background:#161e2b;color:#f5f7fb}input,select,textarea{color-scheme:dark}html{background:#080c12;scrollbar-color:#526682 #101720}a:hover{color:#c8e2ff}
+
+</style>
+</head>
+<body>
+  <a href="#content" class="skip-link">Skip to prompts</a>
+  <header class="header">
+    <a class="brand" href="#">CodeByRushi</a>
+    <a class="video-link" href="https://www.youtube.com/watch?v=d80WZ9SSANo" target="_blank" rel="noopener noreferrer">Watch tutorial ↗</a>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>AI Influencer Prompts</h1>
+      <p>Choose a prompt. Upload the right image. Copy and paste.</p>
+    </div>
+    <nav class="section-buttons" aria-label="Choose a prompt section">
+      <button id="main-button" class="section-button selected" aria-pressed="true" aria-controls="content">1. Main Prompts <span>Start here</span></button>
+      <button id="scene-button" class="section-button" aria-pressed="false" aria-controls="content">2. Scene Prompts <span>71 ready-made scenes</span></button>
+    </nav>
+    <section id="content" aria-labelledby="section-title">
+      <div class="section-heading">
+        <h2 id="section-title">Main Prompts</h2>
+        <p id="section-description">Follow Steps 1–4 to create your character and first image. The remaining prompts are optional.</p>
+      </div>
+      <div class="instruction" id="instruction"><strong>How to use:</strong> Read “Upload first,” then copy the prompt into your AI tool. Replace any text in [square brackets].</div>
+      <div id="filters" class="filters" hidden>
+        <label for="search">Find a scene<input id="search" type="search" placeholder="Search: saree, café, beach…" autocomplete="off"></label>
+        <label for="category">Category<select id="category"><option value="All">All scenes</option><option>Traditional</option><option>Café & cozy</option><option>Casual & city</option><option>Travel & outdoors</option></select></label>
+      </div>
+      <p id="results" class="results" role="status" aria-live="polite"></p>
+      <div id="cards"></div>
+      <div id="empty" class="empty" hidden><h3>No scenes found</h3><p>Try another word or category.</p><button id="clear-filters" class="secondary-button">Clear filters</button></div>
+      <noscript><p>Please enable JavaScript to view and copy these prompts.</p></noscript>
+    </section>
+    <footer>CodeByRushi · Keep your original character reference for every new image.</footer>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+/* CodeByRushi prompt content. Edit these entries to update the gallery. */
+const GALLERY_DATA = {
+  "templates": [
+    {
+      "id": "1",
+      "title": "Create your character",
+      "description": "Design the original face you’ll use in every image.",
+      "upload": "No reference image needed.",
+      "tip": "Describe your adult character inside the square brackets, or use one of the examples. Save your favorite face before continuing.",
+      "time": "1:20",
+      "seconds": 80,
+      "prompt": "Create a highly photorealistic, front-facing portrait of an adult social media influencer.\n\nCHARACTER DETAILS:\n[DESCRIBE YOUR ADULT CHARACTER]\n\nCOMPOSITION:\nThe person is centered, looking directly at the camera, with an upright head, clearly visible facial features, and a gentle, natural smile. Show the head and shoulders against a clean, minimal background.\n\nPHOTOGRAPHY STYLE:\nProfessional portrait photography, soft studio lighting, sharp eyes, natural skin texture with subtle pores and imperfections, realistic skin tones, and shallow depth of field. Use the look of an 85mm portrait lens at f/1.8.\n\nOUTPUT:\nOne realistic portrait of one person. Natural facial proportions and anatomy. No collage, exaggerated features, facial distortion, plastic-looking skin, or added text."
+    },
+    {
+      "id": "2",
+      "title": "Build a character sheet",
+      "description": "Get front, back, left, and right views in one reference.",
+      "upload": "Upload your selected face image from Step 1.",
+      "tip": "Use a 16:9 canvas. Check that all four views still look like your chosen character.",
+      "time": "2:24",
+      "seconds": 144,
+      "prompt": "Use the uploaded portrait as the identity reference. Create one photorealistic character reference sheet showing the same person in exactly four panels arranged in a clean 2×2 grid.\n\nPANEL LAYOUT:\nTop-left: front view, looking directly at the camera.\nTop-right: back view, showing the back of the head and hairstyle.\nBottom-left: left profile, a 90-degree side view.\nBottom-right: right profile, a 90-degree side view.\n\nIDENTITY CONSISTENCY:\nKeep the same facial structure, skin tone, hairstyle, hair length, hair color, clothing, and accessories throughout all four views. Preserve natural head and shoulder proportions. Do not redesign the face or combine different identities.\n\nPRESENTATION:\nUse head-and-shoulders framing with consistent subject scale, a neutral background, and the same soft lighting in every panel. Use even spacing and minimal thin borders between the panels.\n\nOUTPUT:\nOne image containing exactly four panels. Photorealistic portrait photography with natural skin texture. No text, numbers, labels, or extra panels."
+    },
+    {
+      "id": "3",
+      "title": "Describe an inspiration photo",
+      "description": "Extract the outfit, pose, and background in three lines.",
+      "upload": "Upload your inspiration photo.",
+      "tip": "Use the three returned lines in Step 4. The inspiration photo supplies the scene, not your character’s identity.",
+      "time": "3:19",
+      "seconds": 199,
+      "prompt": "Analyze the uploaded image and describe only the scene details needed to recreate its outfit, pose, and background with a different character.\n\nReturn exactly three short lines in this format:\n\nOUTFIT: [Visible clothing colors, style, fabric, and accessories]\nPOSE: [Body position, action, hand placement, camera framing, and expression if relevant]\nBACKGROUND: [Location, surroundings, and visible lighting]\n\nKeep each line concise and ready to paste into an image-generation prompt.\nDo not include the subject's facial identity, skin tone, hair color, hair length, or body type.\nDo not invent details that are not visible.\nDo not add a title, explanation, or extra lines."
+    },
+    {
+      "id": "4",
+      "title": "Keep the face. Change the scene.",
+      "description": "The master prompt for a new outfit, pose, and setting.",
+      "upload": "Upload your four-view character sheet.",
+      "tip": "Replace the three scene placeholders with your own idea, or choose a ready-made scene from the gallery.",
+      "time": "3:54",
+      "seconds": 234,
+      "prompt": "Use the uploaded character reference sheet as the identity reference for this image.\n\nPRIMARY IDENTITY REFERENCE:\nThe TOP-LEFT front-facing portrait is the primary source of facial identity. Use the side and back views only to understand the existing head shape and hairstyle. Do not blend or average the faces across the panels.\n\nPRESERVE THE CHARACTER:\nKeep the same face shape, eye shape and spacing, eyebrows, nose, lips, cheekbones, jawline, skin tone, and defining facial features as the front portrait.\nKeep the same hair color, length, texture, parting, and overall hairstyle as the reference.\nFacial expression may follow the requested pose without changing the person's identity.\n\nSCENE:\nOUTFIT: [WRITE THE CLOTHING AND ACCESSORIES HERE]\nPOSE: [WRITE THE POSE, ACTION, AND EXPRESSION HERE]\nBACKGROUND: [WRITE THE LOCATION AND LIGHTING HERE]\n\nREFERENCE PRIORITY:\nUse the character sheet for identity and hairstyle.\nUse the OUTFIT line for clothing and accessories, replacing those in the sheet when specified.\nUse the POSE and BACKGROUND lines for the new scene.\nDo not redesign the person or introduce a different identity.\n\nSTYLE:\nPhotorealistic DSLR photography, realistic skin texture, natural human proportions, physically plausible lighting, clear facial detail, and shallow depth of field where appropriate.\n\nOUTPUT:\nA single realistic photograph of the same character in the requested scene. One main subject. No character sheet, collage, duplicate person, or extra panels."
+    },
+    {
+      "id": "4B",
+      "title": "Use a single portrait",
+      "description": "An alternative master prompt when you don’t have a sheet.",
+      "upload": "Upload one clear image of your character.",
+      "tip": "Use this instead of Step 4. Replace the three scene placeholders.",
+      "time": "",
+      "seconds": 0,
+      "prompt": "Use the uploaded character image as the identity reference.\n\nPreserve the same facial structure, eye shape and spacing, eyebrows, nose, lips, cheekbones, jawline, skin tone, and defining features. Keep the same hair color, length, texture, parting, and hairstyle. Do not redesign or blend the face with another identity.\n\nCreate a new photograph of this same person with the following scene details:\n\nOUTFIT: [WRITE THE CLOTHING AND ACCESSORIES HERE]\nPOSE: [WRITE THE POSE, ACTION, AND EXPRESSION HERE]\nBACKGROUND: [WRITE THE LOCATION AND LIGHTING HERE]\n\nThe reference image controls identity and hairstyle. The three scene lines control the new clothing, accessories, pose, expression, location, and lighting.\n\nUse photorealistic DSLR photography, natural skin texture, realistic lighting, sharp facial detail, and natural human proportions.\n\nGenerate one realistic photograph of one main subject. No collage, character sheet, duplicate person, or extra panels."
+    },
+    {
+      "id": "5",
+      "title": "Change only the pose",
+      "description": "Keep the character, clothing, and location consistent.",
+      "upload": "Upload a finished scene image, not the character sheet.",
+      "tip": "Describe one new pose. For four different images, run four times using the same original scene image.",
+      "time": "5:01",
+      "seconds": 301,
+      "prompt": "Use the uploaded image as the reference for the character, outfit, and scene.\n\nKEEP CONSISTENT:\nThe same facial identity, skin tone, body proportions, hair color, and hairstyle.\nThe same clothing, accessories, and styling.\nThe same location, background arrangement, lighting direction, and overall color tone.\nThe same camera viewpoint and framing as closely as the new pose allows.\n\nCHANGE ONLY THE POSE:\n[DESCRIBE ONE NEW NATURAL POSE]\n\nKeep the person's expression close to the reference unless a small natural adjustment is necessary for the new pose. Allow realistic changes in shadows and visible body position caused by the movement.\n\nPhotorealistic photography, natural skin texture, correct anatomy, and realistic hands.\n\nGenerate one image of one person. No collage, grid, duplicate person, extra limbs, or unrelated new objects."
+    },
+    {
+      "id": "6",
+      "title": "Copy pose + background",
+      "description": "Place your character into a reference photo or video frame.",
+      "upload": "Image 1: reference pose and background. Image 2: your character in the outfit to keep.",
+      "tip": "Upload the images in this order. This creates a still image; video character swapping is a separate step.",
+      "time": "6:58",
+      "seconds": 418,
+      "prompt": "Create one photorealistic image using two references.\n\nIMAGE 1: Pose, background, and composition reference.\nIMAGE 2: Character identity and outfit reference.\n\nFROM IMAGE 2, PRESERVE:\nThe person's facial identity, face shape, eyes, eyebrows, nose, lips, skin tone, hairstyle, and body proportions.\nThe clothing and accessories shown in Image 2.\n\nFROM IMAGE 1, MATCH:\nThe body pose, posture, hand placement, body orientation, and visible action.\nThe camera viewpoint, shot size, and framing.\nThe background location, scene layout, and placement of major objects.\nThe scene's lighting direction and atmosphere, applied naturally to the character from Image 2.\n\nDo not copy the face, hairstyle, body identity, clothing, or accessories of the person in Image 1.\nDo not use Image 2's background.\nDo not blend the two people's faces or show both people.\n\nFINAL RESULT:\nThe character and outfit from Image 2, placed in the pose, framing, and background of Image 1, with realistic scale, contact, shadows, and perspective.\n\nGenerate one realistic photograph with one main subject. Natural skin texture, clear facial detail, realistic hands, and correct anatomy. No collage or extra panels."
+    },
+    {
+      "id": "7",
+      "title": "Copy only the pose",
+      "description": "Borrow the pose while keeping your own outfit and setting.",
+      "upload": "Image 1: pose reference. Image 2: your finished character scene.",
+      "tip": "The face, outfit, background, and lighting come from Image 2. Only pose and framing come from Image 1.",
+      "time": "",
+      "seconds": 0,
+      "prompt": "Create one photorealistic image using two references.\n\nIMAGE 1: Body pose and camera framing reference only.\nIMAGE 2: Character identity, outfit, background, and lighting reference.\n\nCopy only the body posture, body orientation, hand placement, camera viewpoint, and framing from Image 1.\n\nPreserve the face, facial proportions, skin tone, hairstyle, and body proportions of the person in Image 2.\nKeep the clothing, accessories, background location, and lighting style from Image 2. Adapt the view of that existing location naturally to the requested framing.\n\nDo not copy Image 1's face, clothing, hairstyle, background, or lighting. Do not blend the faces or introduce the person from Image 1.\n\nFINAL RESULT:\nThe person from Image 2 performing the pose from Image 1, wearing the outfit from Image 2, in the setting from Image 2.\n\nGenerate one realistic photograph. Natural anatomy, realistic hands, natural skin texture, and sharp facial detail. No duplicate people, collage, or extra panels."
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Garden Café Coffee Portrait",
+      "category": "Café & cozy",
+      "outfit": "Sleeveless dusty pink fitted top, black high-waisted pants, white sneakers, minimal jewelry",
+      "pose": "Seated at an outdoor table holding a cup with both hands, facing forward with a relaxed expression",
+      "background": "Cozy garden café with wooden furniture, hanging plants, and warm string lights"
+    },
+    {
+      "id": 2,
+      "title": "Black Shimmer Saree — Over-the-Shoulder Portrait",
+      "category": "Traditional",
+      "outfit": "Black saree with sheer fabric and subtle shimmer, sleeveless backless blouse with tie strings and tassels",
+      "pose": "Standing with back partially turned, looking over shoulder with a soft expression",
+      "background": "Plain indoor setting with neutral wall and soft lighting"
+    },
+    {
+      "id": 3,
+      "title": "Casual Gym Portrait",
+      "category": "Casual & city",
+      "outfit": "Black fitted crop t-shirt, dark blue high-waisted athletic shorts",
+      "pose": "Standing facing forward, one hand lifting shirt slightly, relaxed confident expression",
+      "background": "Indoor gym with blurred workout equipment in the background"
+    },
+    {
+      "id": 4,
+      "title": "Blue Sequin Saree in an Open Field",
+      "category": "Traditional",
+      "outfit": "Deep blue sequined saree with matching sleeveless blouse, gold jhumka earrings, bangles",
+      "pose": "Standing with back slightly turned, head looking over shoulder, soft expression",
+      "background": "Blurred open field with greenery and neutral sky"
+    },
+    {
+      "id": 5,
+      "title": "Maroon Floral Saree on a Rooftop",
+      "category": "Traditional",
+      "outfit": "Maroon printed saree with white floral patterns, white short-sleeve blouse, gold bangles, small bindi, simple gold necklace and earrings",
+      "pose": "Standing with both hands raised behind head adjusting hair, slight smile facing camera",
+      "background": "Rooftop setting with potted plants and blurred residential buildings in daylight"
+    },
+    {
+      "id": 6,
+      "title": "Black Saree and Glasses on a Balcony",
+      "category": "Traditional",
+      "outfit": "Black saree with thin gold border, fitted black short-sleeve blouse, round eyeglasses",
+      "pose": "Standing relaxed with hands behind back, slight head tilt and soft smile toward camera",
+      "background": "Outdoor balcony with railing and green trees in the background"
+    },
+    {
+      "id": 7,
+      "title": "Red Saree by an Indoor Doorway",
+      "category": "Traditional",
+      "outfit": "Bright red saree with matching sleeveless blouse, minimal jewelry",
+      "pose": "Standing while holding saree drape over shoulder, facing camera with gentle smile",
+      "background": "Indoor doorway area with red curtain, patterned wall, and door visible behind"
+    },
+    {
+      "id": 8,
+      "title": "Black Top and Jeans on a Terrace",
+      "category": "Casual & city",
+      "outfit": "Black sleeveless high-neck top, fitted ripped blue jeans, white sneakers",
+      "pose": "Sitting on a terrace ledge with one leg bent, hands resting on sides, relaxed expression",
+      "background": "Residential buildings and rooftops in an urban neighborhood"
+    },
+    {
+      "id": 9,
+      "title": "Blue and Gold Saree — Simple Wall Portrait",
+      "category": "Traditional",
+      "outfit": "Bright blue saree with gold border, matching short-sleeve blouse, traditional gold earrings and necklace",
+      "pose": "Standing facing forward, one hand holding saree drape, gentle smile",
+      "background": "Plain beige wall backdrop"
+    },
+    {
+      "id": 10,
+      "title": "Black Saree with Nighttime Bokeh",
+      "category": "Traditional",
+      "outfit": "Black sheer saree with sleeveless blouse, lightweight fabric, minimal jewelry (small earrings)",
+      "pose": "Standing slightly turned to the side, looking off-camera with a calm expression, hands gently together",
+      "background": "Nighttime outdoor park or street with trees and soft blurred lights (bokeh effect)"
+    },
+    {
+      "id": 11,
+      "title": "Pink Puff-Sleeve Top — Mirror Selfie",
+      "category": "Café & cozy",
+      "outfit": "Bright pink puff-sleeve top with fitted jeans, casual style, scrunchie on wrist",
+      "pose": "Holding phone for a mirror selfie, smiling directly at reflection, relaxed seated posture",
+      "background": "Indoor room with warm lighting, mirror view with furniture and wall details visible"
+    },
+    {
+      "id": 12,
+      "title": "Heart-Pattern Sweater — Cozy Mirror Selfie",
+      "category": "Café & cozy",
+      "outfit": "White fuzzy sweater with red heart patterns, light blue high-waisted jeans, casual cozy style",
+      "pose": "Holding phone for a mirror selfie, slight head tilt with a soft smile, standing upright",
+      "background": "Indoor home setting with neutral walls, soft natural light, minimal decor visible"
+    },
+    {
+      "id": 13,
+      "title": "Pink Quarter-Zip Sweatshirt on a Rooftop",
+      "category": "Casual & city",
+      "outfit": "Dusty pink cropped quarter-zip sweatshirt, light blue high-waisted jeans, round eyeglasses",
+      "pose": "Standing upright, one hand lifting hair at the back, slight smile facing camera",
+      "background": "Blurred outdoor urban rooftop setting with neutral tones"
+    },
+    {
+      "id": 14,
+      "title": "Cozy Pink Sweater — Indoor Pose",
+      "category": "Café & cozy",
+      "outfit": "Loose dusty pink cropped sweater, black athletic shorts",
+      "pose": "Hands raised behind head adjusting hair, head tilted slightly upward, soft smile",
+      "background": "Cozy indoor room with warm lighting and potted plants on shelves"
+    },
+    {
+      "id": 15,
+      "title": "Pink Top and Sunglasses in a Rocky Landscape",
+      "category": "Travel & outdoors",
+      "outfit": "Pink sleeveless crop top, light blue jeans, white shirt draped off shoulders, large black sunglasses",
+      "pose": "Standing with one hand near face adjusting sunglasses, other hand resting near waist, serious expression",
+      "background": "Rocky desert or mountain landscape under bright sunlight"
+    },
+    {
+      "id": 16,
+      "title": "Blue Top and Denim Skirt in a Garden",
+      "category": "Travel & outdoors",
+      "outfit": "Bright blue sleeveless fitted top with thin straps, light blue denim mini skirt, black belt",
+      "pose": "Standing with body angled slightly sideways, one hand touching hair, relaxed smile while looking off-camera",
+      "background": "Outdoor garden area with lush green plants, trees, and modern building columns"
+    },
+    {
+      "id": 17,
+      "title": "Red Kurta — Seated Living-Room Portrait",
+      "category": "Traditional",
+      "outfit": "Red embroidered traditional kurta, white embroidered loose pants, silver jhumka earrings, wristwatch",
+      "pose": "Sitting cross-legged on the floor, one hand holding hair, neutral expression facing camera",
+      "background": "Indoor living room with carpet, beige sofa, curtains, and soft ambient lighting"
+    },
+    {
+      "id": 18,
+      "title": "Pink Kurta beside Flowering Bushes",
+      "category": "Traditional",
+      "outfit": "Pink embroidered kurta, delicate gold necklace, shoulder bag with chain strap",
+      "pose": "Standing close-up, one hand raised toward flowers, soft smile facing camera",
+      "background": "Outdoor setting with dense pink flowering bushes and greenery in daylight"
+    },
+    {
+      "id": 19,
+      "title": "White and Blue Kurta — Adjusting a Sleeve",
+      "category": "Traditional",
+      "outfit": "White kurta with light blue embroidery, sheer sleeves, silver jhumka earrings, stacked silver bangles",
+      "pose": "Standing slightly angled, looking down with a soft smile, adjusting sleeve with one hand",
+      "background": "Outdoor garden with greenery, plants, and warm natural sunlight"
+    },
+    {
+      "id": 20,
+      "title": "White and Blue Kurta at Golden Hour",
+      "category": "Traditional",
+      "outfit": "White kurta with blue embroidery, sheer fabric, silver jhumka earrings, multiple silver bangles",
+      "pose": "Head tilted down with eyes closed and a gentle smile, hands near sleeve as if adjusting it",
+      "background": "Lush garden setting with bushes, trees, and soft golden hour lighting"
+    },
+    {
+      "id": 21,
+      "title": "Black Kurta and White Dupatta Indoors",
+      "category": "Traditional",
+      "outfit": "Black embroidered kurta with subtle patterns, white dupatta draped around neck, silver jhumka earrings",
+      "pose": "Standing upright, facing camera with a slight tilt and relaxed smile",
+      "background": "Indoor setting with wooden panel wall and warm sunlight casting shadows"
+    },
+    {
+      "id": 22,
+      "title": "Red Leather Jacket — Motorcycle Portrait",
+      "category": "Casual & city",
+      "outfit": "Red leather jacket over a white ribbed crop top, blue flared jeans, light-colored ankle boots",
+      "pose": "Sitting sideways on a motorcycle, one hand resting behind, looking off to the side with a relaxed expression",
+      "background": "Outdoor wooded area with tall trees and natural sunlight"
+    },
+    {
+      "id": 23,
+      "title": "Black Lehenga — Garden Portrait",
+      "category": "Traditional",
+      "outfit": "Black sleeveless lehenga choli with gold detailing, matching skirt, black dupatta, dangling earrings",
+      "pose": "Standing facing forward with hands behind back, soft neutral expression",
+      "background": "Garden setting with greenery and a paved area"
+    },
+    {
+      "id": 24,
+      "title": "Black and Gold Lehenga with Garden Flowers",
+      "category": "Traditional",
+      "outfit": "Black and gold embroidered lehenga with sheer dupatta, gold choker necklace, earrings, bracelet",
+      "pose": "Standing slightly angled with hands gently clasped, subtle smile",
+      "background": "Outdoor garden with flowers and a blurred architectural structure in the distance"
+    },
+    {
+      "id": 25,
+      "title": "White Saree — Soft Indoor Portrait",
+      "category": "Traditional",
+      "outfit": "White saree with sheer embroidered long-sleeve blouse, silver jhumka earrings, soft makeup",
+      "pose": "Head tilted down with eyes closed, one hand touching neck, relaxed graceful stance",
+      "background": "Soft blurred indoor setting with neutral tones"
+    },
+    {
+      "id": 26,
+      "title": "Deep Pink Satin Saree in a Hallway",
+      "category": "Traditional",
+      "outfit": "Deep pink satin saree with backless blouse tied with strings, minimal jewelry, polished makeup",
+      "pose": "Looking back over shoulder with slight smile, body turned away from camera",
+      "background": "Indoor hallway with smooth walls and warm lighting"
+    },
+    {
+      "id": 27,
+      "title": "Pink and Gold Silk Saree beside Artwork",
+      "category": "Traditional",
+      "outfit": "Pink and gold silk saree with short-sleeve blouse, statement necklace and earrings",
+      "pose": "Standing facing camera with gentle smile, hands lightly holding saree drape",
+      "background": "Indoor setting with wooden wall panel and colorful artwork behind"
+    },
+    {
+      "id": 28,
+      "title": "Pink Printed Saree on a Garden Walkway",
+      "category": "Traditional",
+      "outfit": "Bright pink printed saree with matching blouse featuring tie-back detail, sheer drape, small earrings, bracelet",
+      "pose": "Standing with back slightly turned, looking over shoulder, one hand raised near hair, soft smile",
+      "background": "Outdoor setting with blurred greenery and walkway"
+    },
+    {
+      "id": 29,
+      "title": "Pink Saree and Red Blouse by a Window",
+      "category": "Traditional",
+      "outfit": "Soft pink saree with gold border paired with sleeveless red blouse, gold jhumka earrings, bangles",
+      "pose": "Standing sideways near window, looking back over shoulder, relaxed posture",
+      "background": "Indoor space with neutral walls and soft natural light from window"
+    },
+    {
+      "id": 30,
+      "title": "Coral Pink Saree — Seated Floor Portrait",
+      "category": "Traditional",
+      "outfit": "Coral pink saree with gold embroidered border and sleeveless blouse, minimal jewelry",
+      "pose": "Sitting on floor with legs folded to the side, one hand resting on cheek, calm expression",
+      "background": "Simple indoor setting with plain light-colored wall and dark floor"
+    },
+    {
+      "id": 31,
+      "title": "Black Floral Dress — Sitting on Grass",
+      "category": "Travel & outdoors",
+      "outfit": "Black floral midi dress with puff sleeves, flowy fabric, open-toe sandals",
+      "pose": "Sitting on grass with legs bent to one side, hands clasped over knees, smiling and looking sideways",
+      "background": "Lush green field with soft-focus natural landscape"
+    },
+    {
+      "id": 32,
+      "title": "Casual Cinema-Seat Portrait",
+      "category": "Café & cozy",
+      "outfit": "Black short-sleeve t-shirt, light blue high-waisted jeans, white sneakers",
+      "pose": "Sitting in a theater seat with one elbow resting on armrest, head supported by hand, relaxed expression",
+      "background": "Indoor cinema with rows of red seats labeled 4DX, dim ambient lighting"
+    },
+    {
+      "id": 33,
+      "title": "Red Top beside a Forest Railing",
+      "category": "Travel & outdoors",
+      "outfit": "Red fitted long-sleeve top with front cut-out detail, light blue high-waisted jeans with floral embroidery, small shoulder bag",
+      "pose": "Standing by a wooden railing, one hand resting on railing and the other near chest, looking to the side",
+      "background": "Forest setting with tall trees and greenery, outdoor park-like environment"
+    },
+    {
+      "id": 34,
+      "title": "Pink Open Shirt — Sunlit Outdoor Portrait",
+      "category": "Casual & city",
+      "outfit": "White fitted crop tank top, light blue high-waisted jeans, pink open button-down shirt, gold wristwatch, bracelets, necklace, small handbag",
+      "pose": "Standing sideways adjusting hair with one hand, relaxed posture, looking off to the side with a slight smile",
+      "background": "Outdoor setting with glass windows, sheer curtains, and potted plants"
+    },
+    {
+      "id": 35,
+      "title": "Black Crop Top — Leaning against a White Car",
+      "category": "Casual & city",
+      "outfit": "Black fitted crop top, blue high-waisted jeans, gold wristwatch, bracelet",
+      "pose": "Leaning against a white car, one hand near hair, smiling directly at the camera",
+      "background": "Indoor parking garage with parked cars and overhead lighting"
+    },
+    {
+      "id": 36,
+      "title": "Denim Shirt — Balcony Coffee Portrait",
+      "category": "Café & cozy",
+      "outfit": "Dark denim short-sleeve cropped shirt, white high-waisted shorts, minimal jewelry",
+      "pose": "Standing casually holding a mug, head slightly turned to the side, soft smile",
+      "background": "Balcony or terrace area with railing, natural sunlight, and neutral walls"
+    },
+    {
+      "id": 37,
+      "title": "Gray Loungewear — Kitchen Mirror Selfie",
+      "category": "Café & cozy",
+      "outfit": "Gray cropped sweatshirt with red “ATHLETIC DEPT” text, matching gray drawstring shorts, casual loungewear set",
+      "pose": "Standing mirror selfie, one hand holding phone, other hand touching hair, slight smile",
+      "background": "Cozy kitchen interior with green cabinets, wooden framing, and soft natural light"
+    },
+    {
+      "id": 38,
+      "title": "Beige Top — Patio Bench Portrait",
+      "category": "Café & cozy",
+      "outfit": "Beige sleeveless fitted top with denim shorts, casual summer outfit",
+      "pose": "Sitting sideways on a bench, one arm resting on the backrest, looking off to the side with a calm expression",
+      "background": "Open-air café or patio with wooden furniture, hanging lights, and greenery in warm sunlight"
+    },
+    {
+      "id": 39,
+      "title": "Black Floral Mini Dress — Sofa Portrait",
+      "category": "Café & cozy",
+      "outfit": "Black fitted mini dress with small red floral pattern, thin straps",
+      "pose": "Sitting on a sofa, legs angled to the side, one hand touching hair, relaxed smile",
+      "background": "Bright living room with neutral tones, indoor plants, and sunlight streaming in"
+    },
+    {
+      "id": 40,
+      "title": "Red Dress — Nighttime Garden Portrait",
+      "category": "Travel & outdoors",
+      "outfit": "Red sleeveless dress, gold hoop earrings, gold bangles, minimal makeup",
+      "pose": "Seated with elbows on knees, hands under chin, smiling softly",
+      "background": "Nighttime garden setting with greenery, flowers, and soft lights"
+    },
+    {
+      "id": 41,
+      "title": "White Top and Beige Shorts — Beachside Street",
+      "category": "Travel & outdoors",
+      "outfit": "White fitted crop top, beige high-waisted shorts, sunglasses on head",
+      "pose": "Standing casually walking forward, one hand in pocket, other touching hair, smiling",
+      "background": "Outdoor street near a beach with buildings, pedestrians, and lampposts"
+    },
+    {
+      "id": 42,
+      "title": "Mauve Top — Riverside Bridge Portrait",
+      "category": "Travel & outdoors",
+      "outfit": "Mauve long-sleeve fitted top, black layered mini skirt, white sneakers",
+      "pose": "Standing with one hand resting on railing, slight lean, relaxed smile",
+      "background": "Riverside park with wooden bridge, stepping stones, greenery, and water stream"
+    },
+    {
+      "id": 43,
+      "title": "Red T-Shirt — Finger Hearts at a Night Café",
+      "category": "Casual & city",
+      "outfit": "Red short-sleeve T-shirt, beige cuffed pants, white chunky sneakers, wristwatch",
+      "pose": "Sitting cross-legged on a chair, both hands raised making finger heart gestures, smiling",
+      "background": "Outdoor café setting at night with small tables, plants, streetlights, and storefront"
+    },
+    {
+      "id": 44,
+      "title": "White Shirt — Sunset Beach Walk",
+      "category": "Travel & outdoors",
+      "outfit": "White button-up shirt, beige high-waisted shorts, white sneakers, sunglasses hanging on shirt, holding phone",
+      "pose": "Walking forward on sand, one hand touching hair, relaxed smile",
+      "background": "Beach at sunset with city skyline, tall buildings, and cloudy golden sky"
+    },
+    {
+      "id": 45,
+      "title": "Black Sportswear — Tropical Outdoor Portrait",
+      "category": "Travel & outdoors",
+      "outfit": "Black fitted crop top, light gray athletic shorts, black sunglasses, holding water bottle",
+      "pose": "Standing casually with one hand in pocket, facing camera",
+      "background": "Tropical outdoor area with palm trees, greenery, and bright sunny sky"
+    },
+    {
+      "id": 46,
+      "title": "Oversized Graphic T-Shirt — Urban Steps",
+      "category": "Casual & city",
+      "outfit": "Oversized dark gray graphic T-shirt, light blue straight-leg jeans, chunky white sneakers, black sunglasses, holding a phone and iced drink",
+      "pose": "Sitting on a step with knees bent, arms resting loosely on legs, head tilted upward with a relaxed expression",
+      "background": "Brick wall and wooden door entrance, urban outdoor setting"
+    },
+    {
+      "id": 47,
+      "title": "Black Dress and Paisley Scarf Indoors",
+      "category": "Café & cozy",
+      "outfit": "Black sleeveless patterned dress, black-and-white paisley scarf draped around neck, minimal jewelry, wristwatch",
+      "pose": "Standing indoors, one hand touching hair, looking slightly to the side with a soft smile",
+      "background": "Plain beige indoor wall, softly lit minimal interior"
+    },
+    {
+      "id": 48,
+      "title": "Reading a Book in the Park",
+      "category": "Travel & outdoors",
+      "outfit": "Light gray fitted T-shirt, blue-gray pants, white sneakers with blue accents, light socks",
+      "pose": "Sitting cross-legged on grass, holding and reading a book with a gentle smile",
+      "background": "Open park with green lawn, trees, buildings, and small groups of people in the distance"
+    },
+    {
+      "id": 49,
+      "title": "White Ruffled Dress — Tree-Trunk Seat",
+      "category": "Travel & outdoors",
+      "outfit": "White sleeveless ruffled mini dress with thin straps, minimal jewelry",
+      "pose": "Sitting on a tree trunk with legs crossed, one hand under chin, smiling",
+      "background": "Outdoor park setting with trees, greenery, and soft natural light"
+    },
+    {
+      "id": 50,
+      "title": "Striped Brown Top — Elevator Mirror Selfie",
+      "category": "Café & cozy",
+      "outfit": "Brown striped fitted crop top, high-waisted white pants, glasses, layered necklaces, small shoulder bag",
+      "pose": "Standing in an elevator taking a mirror selfie, one hand holding phone, other touching hair",
+      "background": "Metallic elevator interior with control panel and overhead lighting"
+    },
+    {
+      "id": 51,
+      "title": "Embroidered Blouse and Red Dupatta — Earring Pose",
+      "category": "Traditional",
+      "outfit": "Black embroidered blouse with colorful patterns, black skirt, red dupatta, large traditional earrings",
+      "pose": "Standing while adjusting an earring, head slightly turned to the side",
+      "background": "Outdoor urban setting with a blurred brick building in the background"
+    },
+    {
+      "id": 52,
+      "title": "Pink Jacket — Nighttime Park Bench",
+      "category": "Casual & city",
+      "outfit": "Pink zip-up jacket over black dress, pink sneakers, smartwatch, hair clip accessory",
+      "pose": "Seated cross-legged on a bench, hands resting on knee, slight smile facing camera",
+      "background": "Nighttime park setting with streetlamp, trees, flowers, and blurred city lights"
+    },
+    {
+      "id": 53,
+      "title": "Blue Crop Top — Coastal Railing Portrait",
+      "category": "Travel & outdoors",
+      "outfit": "Light blue sleeveless crop top, high-waisted denim shorts, white cap, glasses",
+      "pose": "Standing by a railing with one hand resting, body slightly angled, relaxed smile",
+      "background": "Coastal seaside view with ocean, distant sailboat, rocky shoreline, clear sky"
+    },
+    {
+      "id": 54,
+      "title": "White Graphic T-Shirt — Campus Steps",
+      "category": "Casual & city",
+      "outfit": "White graphic t-shirt, denim shorts, white sneakers, small backpack",
+      "pose": "Sitting on steps with legs crossed, hands resting casually, looking slightly to the side",
+      "background": "Outdoor campus or courtyard with trees, brick building, and people in the distance"
+    },
+    {
+      "id": 55,
+      "title": "Lavender Saree — Adjusting Earrings at a Mirror",
+      "category": "Traditional",
+      "outfit": "Lavender saree with a sequined blouse, matching bangles, and statement earrings",
+      "pose": "Standing in front of a mirror, adjusting earrings with both hands, calm focused expression",
+      "background": "Indoor room with soft lighting, mirror reflection, blurred furniture and curtains"
+    },
+    {
+      "id": 56,
+      "title": "Red Floral Dress — Garden Peace Sign",
+      "category": "Travel & outdoors",
+      "outfit": "Red floral short dress with puff sleeves, glasses, sandals, and a small basket accessory",
+      "pose": "Standing outdoors, smiling, one leg lifted slightly, making a peace sign with one hand",
+      "background": "Sunlit garden or park with greenery and flowers, soft natural light"
+    },
+    {
+      "id": 57,
+      "title": "Blue Tank Top — Seated by the Ocean",
+      "category": "Travel & outdoors",
+      "outfit": "Light blue tank top, denim mini skirt, white sneakers, and a white cap",
+      "pose": "Sitting on a rock by the water, leaning back on hands, relaxed expression facing camera",
+      "background": "Coastal setting with ocean, boats in the distance, warm sunset lighting"
+    },
+    {
+      "id": 58,
+      "title": "Pink Saree — Flowers in a Garden",
+      "category": "Traditional",
+      "outfit": "Light pink saree with a sleeveless silver sequin blouse, delicate bracelet, small earrings, flower accessory in hair",
+      "pose": "Standing with one hand holding a pink flower near her ear and the other holding a flower, slight smile facing camera",
+      "background": "Lush garden with trees, greenery, and soft natural daylight"
+    },
+    {
+      "id": 59,
+      "title": "Black Crop Top and White Shirt — Beach Walk",
+      "category": "Travel & outdoors",
+      "outfit": "Black crop top, high-waisted denim shorts, white open button-down shirt, sunglasses, smartwatch",
+      "pose": "Walking slightly angled with one leg forward, relaxed posture, looking toward camera",
+      "background": "Sandy beach with boats, calm water, and rocky island formations at sunset"
+    },
+    {
+      "id": 60,
+      "title": "Patterned Top and Green Pants — Café Moment",
+      "category": "Café & cozy",
+      "outfit": "Red-orange patterned sleeveless top, high-waisted green pants, wristwatch, sunglasses resting on head",
+      "pose": "Sitting at a table, holding food and looking to the side with hand near mouth",
+      "background": "Casual indoor café setting with tiled table, chair, and neutral-colored wall"
+    },
+    {
+      "id": 61,
+      "title": "Black Button-Detail Dress beside a Brick Wall",
+      "category": "Casual & city",
+      "outfit": "Fitted black sleeveless mini dress with button detail, black wristwatch, small handbag",
+      "pose": "Standing upright with one hand touching neck, relaxed expression facing camera",
+      "background": "Outdoor setting with red brick wall and black metal fence, greenery behind"
+    },
+    {
+      "id": 62,
+      "title": "Yellow Dress — Coffee and Pastries",
+      "category": "Café & cozy",
+      "outfit": "Bright yellow off-shoulder dress, wristwatch, delicate necklace, brown leather handbag",
+      "pose": "Sitting at a café table holding a cup of coffee, smiling toward camera",
+      "background": "Indoor café with wooden table, pastries, and blurred shopping mall interior"
+    },
+    {
+      "id": 63,
+      "title": "White and Beige Saree by a Wooden Door",
+      "category": "Traditional",
+      "outfit": "White and beige saree with simple jewelry and bangles",
+      "pose": "Standing casually with slight movement in arms, soft smile facing camera",
+      "background": "Indoor space with a wooden door and pink painted wall"
+    },
+    {
+      "id": 64,
+      "title": "Blue Crop Top — Cricket Stadium Portrait",
+      "category": "Casual & city",
+      "outfit": "Fitted bright blue short-sleeve crop top, high-waisted light blue jeans, small necklace, casual shoulder bag",
+      "pose": "Standing with one hand resting on a railing, slight body tilt, soft smile facing camera",
+      "background": "Large cricket stadium with bright field lights, players and spectators visible in seating area"
+    },
+    {
+      "id": 65,
+      "title": "Blue Kurta — Temple Flower Basket",
+      "category": "Traditional",
+      "outfit": "Blue printed traditional kurta with multicolored dupatta (pink and teal tones), small bindi, holding a basket with flowers",
+      "pose": "Standing upright, both hands holding a basket at waist level, gentle smile facing camera",
+      "background": "Decorated temple interior with marigold garlands, lights, and railings, festive setting"
+    },
+    {
+      "id": 66,
+      "title": "Pastel Green Saree beneath a Floral Arch",
+      "category": "Traditional",
+      "outfit": "Elegant pastel green saree with sleeveless blouse, statement necklace, holding a small embellished handbag",
+      "pose": "Standing under an arch, one hand holding handbag, relaxed posture with slight smile",
+      "background": "Outdoor garden setting with floral arch, greenery, and decorative chandelier above"
+    },
+    {
+      "id": 67,
+      "title": "Lavender Gown — Illuminated Garden Portrait",
+      "category": "Travel & outdoors",
+      "outfit": "Light lavender fitted gown with off-shoulder embellished straps, sheer matching scarf drape, silver detailing along neckline and waist",
+      "pose": "Standing with one arm slightly extended, body angled sideways, head turned to the side with a soft smile",
+      "background": "Nighttime garden setting with vibrant flower arrangements, illuminated circular floral arch, and decorative castle-like structures"
+    },
+    {
+      "id": 68,
+      "title": "Red and Green Silk Saree — Namaste at a Shrine",
+      "category": "Traditional",
+      "outfit": "Traditional red and dark green silk saree with gold borders, matching blouse, gold jewelry including necklace and bangles",
+      "pose": "Seated on the floor with hands pressed together in a namaste gesture, facing forward with a gentle smile",
+      "background": "Indoor religious setting with a decorated shrine, idol adorned with flowers, white floral arrangements, and golden drapery"
+    },
+    {
+      "id": 69,
+      "title": "Red Halter Jumpsuit — Modern Indoor Railing",
+      "category": "Casual & city",
+      "outfit": "Bright red sleeveless halter-neck jumpsuit with a tied waist belt, minimal accessories",
+      "pose": "Leaning casually against a railing with one arm resting, body slightly angled, relaxed expression facing camera",
+      "background": "Modern indoor space with wooden vertical panels, staircase railing, and warm ambient lighting fixtures"
+    },
+    {
+      "id": 70,
+      "title": "Red Silk Saree — Sunset Beach Promenade",
+      "category": "Traditional",
+      "outfit": "Red silk saree with a gold border",
+      "pose": "Standing and looking at the camera",
+      "background": "Sunset beach promenade"
+    },
+    {
+      "id": 71,
+      "title": "Black Evening Dress — City Café",
+      "category": "Café & cozy",
+      "outfit": "Modern black evening dress",
+      "pose": "Sitting in a café holding a cup of coffee",
+      "background": "Aesthetic city café interior"
+    }
+  ],
+  "examples": [
+    "A 22-year-old Indian woman with soft brown eyes, long silky black hair, a warm medium-brown complexion, delicate facial features, minimal natural makeup, a friendly smile, and a modern casual outfit.",
+    "An adult South Asian woman with warm medium skin, an oval face, a soft jawline, almond-shaped brown eyes, natural eyebrows, a straight nose, a small black bindi, and a bright natural smile. She has shoulder-length wavy dark brown hair with a middle part and soft volume, and wears traditional silver jhumka earrings."
+  ]
+};
+
+/* Simple dark gallery. All prompts are shown directly on the page. */
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  let view = 'main';
+  let toastTimer;
+  const mainOrder = ['1', '2', '3', '4', '5', '6', '7', '4B'];
+  const titles = {
+    '1': 'Create your AI character',
+    '2': 'Create a character reference sheet',
+    '3': 'Get outfit, pose, and background from a photo',
+    '4': 'Create a new image with the same character',
+    '5': 'Change only the pose',
+    '6': 'Copy the pose and background',
+    '7': 'Copy only the pose',
+    '4B': 'Use one portrait instead of a character sheet'
+  };
+  function make(tag, cls, text) {
+    const node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+  function normalize(text) {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+  function sceneText(scene) {
+    return `OUTFIT: ${scene.outfit}\nPOSE: ${scene.pose}\nBACKGROUND: ${scene.background}`;
+  }
+  function fullPrompt(scene) {
+    return GALLERY_DATA.templates.find(item => item.id === '4').prompt.replace(
+      /OUTFIT: \[.*?\]\nPOSE: \[.*?\]\nBACKGROUND: \[.*?\]/,
+      () => sceneText(scene)
+    );
+  }
+  function notify(message) {
+    clearTimeout(toastTimer);
+    $('toast').textContent = message;
+    $('toast').classList.add('visible');
+    toastTimer = setTimeout(() => $('toast').classList.remove('visible'), 3500);
+  }
+  async function copyPrompt(text, button, card) {
+    let copied = false;
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        copied = true;
+      }
+    } catch (_) { /* Try the local-file clipboard fallback. */ }
+    if (!copied) {
+      const area = make('textarea');
+      area.value = text;
+      area.style.cssText = 'position:fixed;top:0;left:0;opacity:0;width:2px;height:2px';
+      document.body.append(area);
+      area.focus();
+      area.select();
+      try { copied = document.execCommand('copy'); } catch (_) { copied = false; }
+      area.remove();
+      button.focus({ preventScroll: true });
+    }
+    if (copied) {
+      const label = button.textContent;
+      button.textContent = 'Copied ✓';
+      button.classList.add('copied');
+      button.disabled = true;
+      setTimeout(() => { button.textContent = label; button.classList.remove('copied'); button.disabled = false; }, 1500);
+      notify('Prompt copied. Paste it into your AI tool.');
+      return;
+    }
+    // Manual copying stays on the page. No modal or hidden editor.
+    let fallback = card.querySelector('.manual-copy');
+    if (!fallback) {
+      fallback = make('div', 'manual-copy');
+      fallback.append(make('p', '', 'Automatic copying is blocked. Select the text below and use Copy (Ctrl+C on Windows).'));
+      const content = make('div', 'manual-text', text);
+      content.tabIndex = 0;
+      fallback.append(content);
+      card.append(fallback);
+    }
+    const content = fallback.querySelector('.manual-text');
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(content);
+    if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+    content.focus();
+    fallback.scrollIntoView({ block: 'nearest' });
+    notify('Use your device’s Copy command on the selected prompt.');
+  }
+  function copyButton(text, card, label = 'Copy prompt') {
+    const button = make('button', 'copy-button', label);
+    button.addEventListener('click', () => copyPrompt(text, button, card));
+    return button;
+  }
+  function renderMain() {
+    mainOrder.forEach(id => {
+      const item = GALLERY_DATA.templates.find(t => t.id === id);
+      const card = make('article', 'prompt-card');
+      const head = make('div', 'card-head');
+      head.append(make('span', 'step', id === '4B' ? 'OPTIONAL · ALTERNATIVE TO STEP 4' : `STEP ${id}${Number(id) > 4 ? ' · OPTIONAL' : ''}`));
+      head.append(make('h3', '', titles[id]), make('p', 'purpose', item.description));
+      const reference = make('div', 'reference');
+      reference.append(make('strong', '', 'Upload first:'), document.createTextNode(item.upload));
+      head.append(reference, make('p', 'tip', item.tip));
+      const prompt = make('pre', 'prompt-text', item.prompt);
+      prompt.setAttribute('aria-label', `Prompt: ${titles[id]}`);
+      card.append(head, prompt);
+      if (id === '1') {
+        const example = make('div', 'example');
+        example.append(make('strong', '', 'Example character description:'), make('p', '', GALLERY_DATA.examples[0]));
+        card.append(example);
+      }
+      const bottom = make('div', 'card-bottom');
+      if (item.time) {
+        const timestamp = make('a', 'timestamp', `Watch this step at ${item.time} ↗`);
+        timestamp.href = `https://www.youtube.com/watch?v=d80WZ9SSANo&t=${item.seconds}s`;
+        timestamp.target = '_blank';
+        timestamp.rel = 'noopener noreferrer';
+        bottom.append(timestamp);
+      } else bottom.append(make('span', 'copy-note', 'Copy, then replace the square-bracket placeholders if present.'));
+      bottom.append(copyButton(item.prompt, card));
+      card.append(bottom);
+      $('cards').append(card);
+    });
+    $('results').textContent = '8 prompts · Read and copy below';
+  }
+  function renderScenes() {
+    const words = normalize($('search').value).split(/\s+/).filter(Boolean);
+    const category = $('category').value;
+    const scenes = GALLERY_DATA.scenes.filter(scene => {
+      const text = normalize(`${scene.title} ${scene.category} ${sceneText(scene)}`);
+      return (category === 'All' || scene.category === category) && words.every(word => text.includes(word));
+    });
+    scenes.forEach(scene => {
+      const card = make('article', 'prompt-card scene-card');
+      const head = make('div', 'card-head');
+      head.append(make('span', 'step', `SCENE ${scene.id} · ${scene.category.toUpperCase()}`), make('h3', '', scene.title));
+      const details = make('dl', 'scene-lines');
+      [['Outfit', scene.outfit], ['Pose', scene.pose], ['Background', scene.background]].forEach(([name, text]) => {
+        const row = make('div');
+        row.append(make('dt', '', name), make('dd', '', text));
+        details.append(row);
+      });
+      const bottom = make('div', 'card-bottom');
+      bottom.append(make('span', 'copy-note', 'Includes the full character-consistency prompt. Upload your character sheet.'), copyButton(fullPrompt(scene), card, 'Copy full prompt'));
+      card.append(head, details, bottom);
+      $('cards').append(card);
+    });
+    $('results').textContent = `${scenes.length} of 71 scenes`;
+    $('empty').hidden = scenes.length !== 0;
+  }
+  function render() {
+    $('cards').replaceChildren();
+    $('empty').hidden = true;
+    if (view === 'main') renderMain();
+    else renderScenes();
+  }
+  function show(next) {
+    view = next;
+    const isMain = view === 'main';
+    $('main-button').classList.toggle('selected', isMain);
+    $('scene-button').classList.toggle('selected', !isMain);
+    $('main-button').setAttribute('aria-pressed', String(isMain));
+    $('scene-button').setAttribute('aria-pressed', String(!isMain));
+    $('filters').hidden = isMain;
+    $('section-title').textContent = isMain ? 'Main Prompts' : 'Scene Prompts';
+    $('section-description').textContent = isMain ? 'Follow Steps 1–4 to create your character and first image. The remaining prompts are optional.' : 'Choose an outfit, pose, and background for your character.';
+    $('instruction').replaceChildren(make('strong', '', isMain ? 'How to use: ' : 'Upload first: '), document.createTextNode(isMain ? 'Read “Upload first,” then copy the prompt into your AI tool. Replace any text in [square brackets].' : 'Your character reference sheet from Step 2. “Copy full prompt” includes the identity instructions and the chosen scene, ready to paste.'));
+    render();
+  }
+  $('main-button').addEventListener('click', () => show('main'));
+  $('scene-button').addEventListener('click', () => show('scenes'));
+  $('search').addEventListener('input', render);
+  $('category').addEventListener('change', render);
+  $('clear-filters').addEventListener('click', () => {
+    $('search').value = '';
+    $('category').value = 'All';
+    render();
+    $('search').focus();
+  });
+  show('main');
+})();
+
+</script>
+</body>
+</html>
